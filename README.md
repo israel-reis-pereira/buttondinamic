@@ -5,7 +5,7 @@ Este é um projeto simples e divertido baseado na mecânica clássica de botões
 ## 🚀 Funcionalidades
 
 - **Botão Inteligente ("Não"):** Utiliza cálculos de posicionamento baseados no tamanho da janela do navegador (`window.innerWidth` e `window.innerHeight`) para se mover aleatoriamente sempre que houver uma interação.
-- **Redirecionamento Surpresa ("Sim"):** O clique valida a resposta e redireciona automaticamente o usuário para uma nova aba com o clássico vídeo de meme do Bob Esponja.
+- **Redirecionamento Surpresa ("Sim"):** Que eu não vou contar já que é surpresa, vai lá descobrir.
 
 ## 🛠️ Tecnologias Utilizadas
 
