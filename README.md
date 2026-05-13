@@ -1,6 +1,6 @@
-# 🎯 Jogo de Botões Dinâmicos - Meme Fuga
+# 🎯 Jogo de Botões Dinâmicos 
 
-Este é um projeto simples e divertido baseado na mecânica clássica de botões que fogem do cursor do usuário. Desenvolvido com HTML5, CSS3 estruturado e JavaScript nativo.
+Este é um projeto simples e divertido baseado na mecânica clássica de botões que fogem do cursor/clique do usuário. Desenvolvido com HTML5, CSS3 estruturado e JavaScript nativo.
 
 ## 🚀 Funcionalidades
 
