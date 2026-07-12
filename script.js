@@ -14,12 +14,6 @@ function desviarBotao() {
     moveButton.style.top = randomY + "px";
 }
 
-// Eventos para Mobile (Tocar na tela)
-moveButton.addEventListener("touchstart", (e) => {
-    e.preventDefault(); // Impede o clique fantasma nativo do mobile
-    desviarBotao();
-});
-
 // Evento do botão "Sim"
 normalButton.addEventListener("click", () => {
     window.open("https://youtu.be/dlE-DdOAI0E?si=UH7LQETJ38GLGKw_", "_blank");
