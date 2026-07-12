@@ -1,9 +1,7 @@
-# Projeto Botões Dinâmicos e Movimento
+# Jogo de Botões Dinâmicos
 
 ## Sobre
-Este é um projeto simples desenvolvido com o objetivo de estudar a manipulação de eventos do DOM (Document Object Model) e cálculos de posicionamento dinâmico na tela através do navegador. 
-
-A aplicação apresenta uma interface interativa baseada na mecânica clássica de um botão que desvia do cursor do usuário com base nas dimensões em tempo real da janela visualizada.
+Este é um projeto simples e divertido baseado na mecânica clássica de botões que mudam de posição após a interação do usuário. O projeto foi desenvolvido de forma direta com o objetivo de estudar a manipulação básica do DOM (Document Object Model), escuta de eventos de clique e a aplicação de coordenadas pseudo-aleatórias através do navegador.
 
 ---
 
@@ -15,28 +13,29 @@ A aplicação apresenta uma interface interativa baseada na mecânica clássica 
 ---
 
 ## Funcionalidades
-* **Mecânica de Fuga**: O botão "Não" calcula as coordenadas máximas horizontais (`window.innerWidth`) e verticais (`window.innerHeight`) para gerar um novo posicionamento randômico sempre que o usuário tenta interagir com ele.
-* **Redirecionamento Externo**: O botão "Sim" engatilha a abertura automática de uma nova aba do navegador direcionada para um vídeo externo de referência via API do navegador.
+* **Botão Dinâmico ("Não")**: Utiliza cálculos de posicionamento baseados nas propriedades de dimensão da janela do navegador (`window.innerWidth` e `window.innerHeight`) para se mover aleatoriamente pela tela a cada clique recebido.
+* **Redirecionamento Externo ("Sim")**: Dispara a abertura automática de uma nova guia do navegador direcionada para um link de vídeo externo via método integrado da API do navegador.
 
 ---
 
 ## Estrutura de Arquivos
-O projeto é composto por três arquivos estruturais básicos que devem permanecer no mesmo nível de diretório:
-* `index.html`: Responsável pela marcação e elementos de tela.
-* `style.css`: Controla o alinhamento centralizado e propriedades de transição.
-* `script.js`: Gerencia as escutas de eventos (`mouseover` e `click`) e as funções matemáticas de aleatoriedade.
+O projeto é composto por três arquivos principais integrados:
+* `index.html`: Define os elementos de texto, espaçamentos estáticos e a marcação de tela.
+* `style.css`: Controla o alinhamento em coluna e define a propriedade de transição e transformação visual dos elementos.
+* `script.js`: Gerencia a lógica matemática de aleatoriedade das coordenadas e as escutas aos eventos de clique de ambos os botões.
 
 ---
 
 ## Como Executar o Projeto Localmente
-1. Realize o download ou o clone deste repositório na sua máquina de trabalho.
-2. Certifique-se de manter os três arquivos na mesma pasta.
-3. Execute o arquivo `index.html` com um duplo clique para abrir a interface diretamente em qualquer navegador moderno.
+1. Faça o download ou clone os arquivos deste repositório em seu computador.
+2. Certifique-se de que os arquivos `index.html`, `style.css` e `script.js` estejam localizados exatamente dentro do mesmo diretório.
+3. Dê um duplo clique no arquivo `index.html` para executar e visualizar a aplicação em qualquer navegador moderno.
 
 ---
 
 ## Customização
-Para alterar o comportamento de redirecionamento ou modificar o link de destino, abra o arquivo `script.js` e altere o parâmetro textual de URL configurado dentro do método nativo:
+Caso queira alterar o endereço de destino ou customizar o redirecionamento, abra o arquivo `script.js` e substitua o link de exemplo contido no método nativo:
+
 ```javascript
-window.open("SUA_URL_AQUI", "_blank");
+window.open("INSIRA_O_LINK_DESEJADO_AQUI", "_blank");
 ```
