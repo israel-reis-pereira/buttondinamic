@@ -1,40 +1,46 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
 }
-
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 0 10px;
+#moveButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 1s;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Mantém uma distância fixa inicial entre os botões */
-    width: 100%;
-    max-width: 400px;
-    height: 60px;
-    position: relative;
+}
+
+h1 {
+    text-align: center;
 }
 
 button {
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    background-color: #007BFF;
-}
-
-#moveButton {
-    z-index: 10;
+    transition: transform 1s;
 }
