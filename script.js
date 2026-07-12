@@ -15,9 +15,6 @@ function desviarBotao() {
     moveButton.style.top = randomY + "px";
 }
 
-// Eventos para Desktop (Passar o mouse)
-moveButton.addEventListener("mouseover", desviarBotao);
-
 // Eventos para Mobile (Tocar na tela)
 moveButton.addEventListener("touchstart", (e) => {
     e.preventDefault(); // Impede o clique fantasma nativo do mobile
