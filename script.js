@@ -1,17 +1,31 @@
 const moveButton = document.getElementById("moveButton");
+const normalButton = document.getElementById("normalButton");
 
-moveButton.addEventListener("click", () => {
-    const maxX = window.innerWidth - moveButton.clientWidth;
-    const maxY = window.innerHeight - moveButton.clientHeight;
+function desviarBotao() {
+    moveButton.style.position = "absolute";
+
+    const margem = 20;
+    const maxX = window.innerWidth - moveButton.clientWidth - margem;
+    const maxY = window.innerHeight - moveButton.clientHeight - margem;
     
-    const randomX = Math.floor(Math.random() * maxX);
-    const randomY = Math.floor(Math.random() * maxY);
+    const randomX = Math.max(margem, Math.floor(Math.random() * maxX));
+    const randomY = Math.max(margem, Math.floor(Math.random() * maxY));
     
     moveButton.style.left = randomX + "px";
     moveButton.style.top = randomY + "px";
+}
+
+// Eventos para Desktop (Passar o mouse)
+moveButton.addEventListener("mouseover", desviarBotao);
+
+// Eventos para Mobile (Tocar na tela)
+moveButton.addEventListener("touchstart", (e) => {
+    e.preventDefault(); // Impede o clique fantasma nativo do mobile
+    desviarBotao();
 });
+
 // Evento do botão "Sim"
 normalButton.addEventListener("click", () => {
-    // alert("Finalmente se assumiu!");
     window.open("https://youtu.be/dlE-DdOAI0E?si=UH7LQETJ38GLGKw_", "_blank");
+    // alert("Finalmente se assumiu!");
 });
