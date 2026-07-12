@@ -6,31 +6,38 @@ body {
     height: 100vh;
     margin: 0;
     font-family: sans-serif;
-    overflow: hidden; /* Evita barras de rolagem quando o botão fugir para as bordas */
+    background-color: #f0f0f0;
+    overflow: hidden;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Garante um espaço reservado para o botão */
+    gap: 20px; /* Mantém uma distância fixa inicial entre os botões */
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    position: relative;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007BFF;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    background-color: #007BFF;
 }
 
 #moveButton {
-    position: absolute;
-    transition: all 0.2s ease; /* Transição mais rápida torna a fuga mais realista */
+    z-index: 10;
 }
