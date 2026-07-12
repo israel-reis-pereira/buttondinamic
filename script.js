@@ -2,7 +2,6 @@ const moveButton = document.getElementById("moveButton");
 const normalButton = document.getElementById("normalButton");
 
 function desviarBotao() {
-    moveButton.style.position = "absolute";
 
     const margem = 20;
     const maxX = window.innerWidth - moveButton.clientWidth - margem;
