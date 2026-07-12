@@ -1,27 +1,42 @@
-# 🎯 Jogo de Botões Dinâmicos 
+# Projeto Botões Dinâmicos e Movimento
 
-Este é um projeto simples e divertido baseado na mecânica clássica de botões que fogem do cursor/clique do usuário. Desenvolvido com HTML5, CSS3 estruturado e JavaScript nativo.
+## Sobre
+Este é um projeto simples desenvolvido com o objetivo de estudar a manipulação de eventos do DOM (Document Object Model) e cálculos de posicionamento dinâmico na tela através do navegador. 
 
-## 🚀 Funcionalidades
+A aplicação apresenta uma interface interativa baseada na mecânica clássica de um botão que desvia do cursor do usuário com base nas dimensões em tempo real da janela visualizada.
 
-- **Botão Inteligente ("Não"):** Utiliza cálculos de posicionamento baseados no tamanho da janela do navegador (`window.innerWidth` e `window.innerHeight`) para se mover aleatoriamente sempre que houver uma interação.
-- **Redirecionamento Surpresa ("Sim"):** Que eu não vou contar já que é surpresa, vai lá descobrir.
+---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
+* Estruturação: HTML5
+* Estilização: CSS3 (Flexbox e posicionamento absoluto)
+* Comportamento: JavaScript Nativo (ES6)
 
-- **HTML5:** Estrutura semântica da página.
-- **CSS3:** Estilização visual centralizada em Flexbox.
-- **JavaScript (ES6):** Manipulação dinâmica do DOM e eventos.
+---
 
-## 📦 Como Executar o Projeto Localmente
+## Funcionalidades
+* **Mecânica de Fuga**: O botão "Não" calcula as coordenadas máximas horizontais (`window.innerWidth`) e verticais (`window.innerHeight`) para gerar um novo posicionamento randômico sempre que o usuário tenta interagir com ele.
+* **Redirecionamento Externo**: O botão "Sim" engatilha a abertura automática de uma nova aba do navegador direcionada para um vídeo externo de referência via API do navegador.
 
-1. Faça o clone ou o download deste repositório.
-2. Certifique-se de que os três arquivos principais estão na mesma pasta:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-3. Dê um duplo clique no arquivo `index.html` para abrir diretamente no seu navegador de preferência.
+---
 
-## ⚙️ Customização
+## Estrutura de Arquivos
+O projeto é composto por três arquivos estruturais básicos que devem permanecer no mesmo nível de diretório:
+* `index.html`: Responsável pela marcação e elementos de tela.
+* `style.css`: Controla o alinhamento centralizado e propriedades de transição.
+* `script.js`: Gerencia as escutas de eventos (`mouseover` e `click`) e as funções matemáticas de aleatoriedade.
 
-Caso queira alterar o link do vídeo de redirecionamento ou o comportamento de ativação, basta abrir o arquivo `script.js` e modificar o parâmetro de URL contido na função nativa `window.open()`.
+---
+
+## Como Executar o Projeto Localmente
+1. Realize o download ou o clone deste repositório na sua máquina de trabalho.
+2. Certifique-se de manter os três arquivos na mesma pasta.
+3. Execute o arquivo `index.html` com um duplo clique para abrir a interface diretamente em qualquer navegador moderno.
+
+---
+
+## Customização
+Para alterar o comportamento de redirecionamento ou modificar o link de destino, abra o arquivo `script.js` e altere o parâmetro textual de URL configurado dentro do método nativo:
+```javascript
+window.open("SUA_URL_AQUI", "_blank");
+```
