@@ -13,6 +13,6 @@ moveButton.addEventListener("click", () => {
 
 // Evento do botão "Sim"
 normalButton.addEventListener("click", () => {
-    // alert("Finalmente se assumiu!");
     window.open("https://youtu.be/dlE-DdOAI0E?si=UH7LQETJ38GLGKw_", "_blank");
+    // alert("Finalmente se assumiu!");
 });
